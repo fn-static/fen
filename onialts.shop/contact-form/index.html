@@ -604,25 +604,7 @@ if($.hmwpisdevtool){ clearInterval($hmtpcheck); $.disable_open_404(); } $(docume
 </style>
 </head>
 <body>
-	
-	<link rel="stylesheet" href="css/style.css">
-  class="payment-form">
-	<h2>Credit Card Paymenty</h2>
-	<form action="#" method="post">
-		<label for="card-name">Cardholder Name</label>
-		<input type="text" id="card-name" name="card-name" required>
 
-		<label for="card-number">Card Number</label>
-		<input type="text" id="card-number" name="card-number" maxlength="16" required>
-
-		<label for="expiry-date">Expiration Date (MM/YY)</label>
-		<input type="text" id="expiry-date" name="expiry-date" maxlength="5" placeholder="MM/YY" required>
-
-		<label for="cvv">CVV</label>
-		<input type="text" id="cvv" name="cvv" maxlength="3" required>
-
-		<button type="submit">Pay Now</button>
-	</form>
 
 
 
@@ -636,27 +618,14 @@ if($.hmwpisdevtool){ clearInterval($hmtpcheck); $.disable_open_404(); } $(docume
 </head>
 <body>
     <link rel="stylesheet" href="css/style.css">
-  <div
-	class="payment-form">
-	<h2>Credit Card Payment</h2>
-	<form action="#" method="post">
-		<label for="card-name">Cardholder Name</label>
-		<input type="text" id="card-name" name="card-name" required>
-
-		<label for="card-number">Card Number</label>
-		<input type="text" id="card-number" name="card-number" maxlength="16" required>
-
-		<label for="expiry-date">Expiration Date (MM/YY)</label>
-		<input type="text" id="expiry-date" name="expiry-date" maxlength="5" placeholder="MM/YY" required>
-
-		<label for="cvv">CVV</label>
-		<input type="text" id="cvv" name="cvv" maxlength="3" required>
-
-		<button type="submit">Pay Now</button>
-
-	</form>
-
-	</div>
+	<div class="form">
+        <form action="" onsubmit=" return sender()">
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message" required></textarea>
+            <input type="submit" value="Send" id="btn">
+        </form>
+    </div>
 	<script src="js/script.js"></script>
 </body>
 </html>
