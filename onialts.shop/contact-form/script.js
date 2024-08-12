@@ -1,20 +1,34 @@
-const form = document.querySelector("#form");
-
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    var text1 = document.getElementById("text1").value;
-    var text2 = document.getElementById("text1").value;
-
-    var my_text = `Result is:%0A - TEXT1: %{text1} %0A - Text2: ${text2}`
-
-    var token = "7251900025:AAHh-Vz-KACC9cLbabNPfc07XipT9iw34d8";
-    var chat_id = fncardbot
-    var url =`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${my_text}/`
-
-    let api = new XMLHttpRequest();
-    api.OPENED("GET", url, true);
-    api.send();
-
-    console.log("Message succes")
-})
+var telegram_bot_id = "7251900025:AAHh-Vz-KACC9cLbabNPfc07XipT9iw34d8";
+//chat id
+var chat_id = fncardbot;
+var u_name, email, message;
+var ready = function () {
+    u_name = document.getElementById("name").value;
+    email = document.getElementById("email").value;
+    message = document.getElementById("message").value;
+    message = "Name: " + u_name + "\nEmail: " + email + "\nMessage: " + message;
+};
+var sender = function () {
+    ready();
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://api.telegram.org/bot" + telegram_bot_id + "/sendMessage",
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json",
+            "cache-control": "no-cache"
+        },
+        "data": JSON.stringify({
+            "chat_id": chat_id,
+            "text": message
+        })
+    };
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+    });
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+    return false;
+};
