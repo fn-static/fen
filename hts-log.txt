@@ -1,0 +1,22 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 12 Aug 2024 18:47:08 at https://onialts.shop +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://onialts.shop -O1 "E:\fnnnn" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:47:44	Warning: 	Link https://onialts.shop/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+18:47:46	Warning: 	Moved Permanently for https://onialts.shop/?p=1709
+18:47:46	Warning: 	File has moved from https://onialts.shop/?p=1709 to https://onialts.shop/contact-form/
+18:47:46	Warning: 	Moved Permanently for https://onialts.shop/?p=1918
+18:47:46	Warning: 	File has moved from https://onialts.shop/?p=1918 to https://onialts.shop/privacy-policy/
+18:47:46	Warning: 	Moved Permanently for https://onialts.shop/?p=1939
+18:47:46	Warning: 	File has moved from https://onialts.shop/?p=1939 to https://onialts.shop/disclaimer/
+18:47:46	Warning: 	Moved Permanently for https://onialts.shop/?p=1951
+18:47:46	Warning: 	File has moved from https://onialts.shop/?p=1951 to https://onialts.shop/terms-of-service/
+18:47:46	Warning: 	Moved Permanently for https://onialts.shop/?p=1965
+18:47:46	Warning: 	File has moved from https://onialts.shop/?p=1965 to https://onialts.shop/copyright/
+
+HTTrack Website Copier/3.49-2 mirror complete in 38 seconds : 129 links scanned, 123 files written (14483901 bytes overall) [10131648 bytes received at 266622 bytes/sec], 6310567 bytes transferred using HTTP compression in 94 files, ratio 29%, 26.2 requests per connection
+(No errors, 11 warnings, 0 messages)
